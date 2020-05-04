@@ -7,7 +7,7 @@ public class EquilateralTriangle extends Triangle {
     }
 
     public String draw() {
-        return "I draw a equilateral triangle: ";
+        return "I draw a equilateral triangle : ";
     }
 
     //suprascriem functia perimeter din clasa Triangle
@@ -19,5 +19,7 @@ public class EquilateralTriangle extends Triangle {
     public double area() {
         return (edge1 * height) / 2;
     }
+
+
 
 }
