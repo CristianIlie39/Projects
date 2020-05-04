@@ -48,4 +48,8 @@ public class Quadrilateral extends Shapes {
         return edge4;
     }
 
+    public String toString() {
+        return "the result is: " + edge1+edge2+edge3+edge4;
+    }
+
 }

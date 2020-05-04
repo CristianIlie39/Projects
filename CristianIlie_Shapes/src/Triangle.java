@@ -48,4 +48,8 @@ public class Triangle extends Shapes {
         return height;
     }
 
+    public String toString() {
+        return "the edge1 is: " + edge1 + ", the edge2 is: " + edge2 + ", the edge3 is: " + edge3;
+    }
+
 }

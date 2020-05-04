@@ -25,9 +25,8 @@ public class Main {
         System.out.println("The area of the quadrilateral C is: " + C.area());
         System.out.println("The area of the equilateral triangle D is: " + D.area());
         System.out.println("The area of the square E is: " + E.area());
-
-
-
+        System.out.println(B.toString());
+        System.out.println(C.toString());
 
 
     }
