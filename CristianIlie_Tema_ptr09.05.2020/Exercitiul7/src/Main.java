@@ -9,7 +9,7 @@ public class Main {
         array[0] = "volumul";
         array[1] = "vânzări";
         array[2] = "triplat";
-        array[3] = "perioadă";
+        array[3] = "mica";
         array[4] = "siguranţă";
         array[5] = "situaţie";
         array[6] = "izolare";
