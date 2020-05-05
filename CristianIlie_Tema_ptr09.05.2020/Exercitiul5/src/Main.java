@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String text = "are în plan dezvoltarea unei soluţii care să digitalizeze procesele birocratice între persoanele fizice şi furnizorii de servicii publice";
+        String text = "el are în plan dezvoltarea unei soluţii care să digitalizeze procesele birocratice între persoanele fizice şi furnizorii de servicii publice";
 
         afiseazaCuvinte(text);
         System.out.println();
