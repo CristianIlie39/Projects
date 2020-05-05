@@ -13,7 +13,7 @@ public class Main {
 
             // 2 Mamifere
             Mammal mammal1 = new Mammal("maro", 4, "caprioara", "alearga", false, 2);
-            Mammal mammal2 = new Mammal("alb", 4, "porc", "merge", false, 12);
+            Mammal mammal2 = new Mammal("alb", 4, "porc", "merge", false, 10);
 
             // 2 Ierbivore
             HerbivorousAnimal herbivorousAnimal1 = new HerbivorousAnimal("alb", 4, "oaie", "merge", false, true);
