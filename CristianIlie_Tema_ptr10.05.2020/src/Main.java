@@ -1,3 +1,4 @@
+import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.util.Scanner;
 import java.util.concurrent.Callable;
 
@@ -77,11 +78,22 @@ public class Main {
 
         //concateneaza 2 stringuri
         CalculatorString rezultatConcatenare = new CalculatorString();
-        System.out.println(rezultatConcatenare.concatenareStringuri("mere", "pere"));
+        Scanner scanner1 = new Scanner(System.in);
+        System.out.println("Va rog sa introduceti primul string");
+        String text1 = scanner1.nextLine();
+        System.out.println("Va rog sa introduceti al doilea string");
+        String text2 = scanner1.nextLine();
+        System.out.println(rezultatConcatenare.concatenareStringuri(text1, text2));
 
         //verifica daca stringul contine un anumit caracter
         CalculatorString verificare = new CalculatorString();
-        System.out.println(verificare.verificaCaracter("Imi voi indeplini obiectivul daca voi fi perseverent"));
+        Scanner scanner2 = new Scanner(System.in);
+        System.out.println("Va rog sa introduceti un text");
+        String text = scanner2.nextLine();
+        System.out.println("Va rog sa introduceti un caracter");
+        String caracter = scanner2.nextLine();
+        System.out.println("Caracterul introdus este la pozitia " + verificare.contineCaracter(text, caracter));
+
 
         //aduna lungimea a 2 stringuri
         String a = "Ana are mere";
@@ -95,11 +107,25 @@ public class Main {
         System.out.println(verificaString.verificareLungimeString(c));
 
         //transforma un string intr-un sir de caractere
-        String d = "Dan mananca sanatos";
+        Scanner scann = new Scanner(System.in);
+        System.out.println("Va rog sa introduceti un string de la tastatura");
+        String scanner = scann.nextLine();
         CalculatorString sirCaractere = new CalculatorString();
-        sirCaractere.arrayCaractere(d);
+        sirCaractere.arrayCaractere(scanner);
 
-        
+        //verifica daca stringul incepe cu o vocala
+        System.out.println("Va rugam introduceti un string pentru verificare daca incepe cu o vocala");
+        Scanner scan3 = new Scanner(System.in);
+        String string1 = scan3.nextLine();
+        CalculatorString incepeVocala = new CalculatorString();
+        System.out.println(incepeVocala.vocalaText(string1));
+
+        ////numara spatiile dintr-un string
+        System.out.println("Va rugam introduceti un string pentru numararea spatiilor din string");
+        String string2 = scan3.nextLine();
+        CalculatorString numaraSpatii = new CalculatorString();
+        System.out.println(numaraSpatii.numaraSpatiiString(string2));
+
 
     }
 
