@@ -1,4 +1,4 @@
-public class CalculatorString {
+public class CalculatorString extends CalculatorStiintific {
 
     //concateneaza 2 stringuri
     //verifica daca stringul contine un anumit caracter
