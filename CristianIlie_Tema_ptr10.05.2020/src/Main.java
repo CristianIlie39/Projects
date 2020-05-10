@@ -92,7 +92,7 @@ public class Main {
         String text = scanner2.nextLine();
         System.out.println("Va rog sa introduceti un caracter");
         String caracter = scanner2.nextLine();
-        System.out.println("Caracterul introdus este la pozitia " + verificare.contineCaracter(text, caracter));
+        System.out.println("Caracterul introdus este la pozitia: " + verificare.contineCaracter(text, caracter));
 
 
         //aduna lungimea a 2 stringuri
