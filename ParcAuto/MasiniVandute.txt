@@ -1,0 +1,2 @@
+BMW,X5,negru,15000,benzina,2015
+Mercedes,GLCCoupe,negru,60000,benzina,2019

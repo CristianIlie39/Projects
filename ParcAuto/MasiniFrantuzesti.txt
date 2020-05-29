@@ -1,0 +1,3 @@
+Renault,Megane,alb,7000,benzina,2016
+Peugeot,model208,gri,5000,motorina,2019
+Citroen,C3,verde,6500,motorina,2011

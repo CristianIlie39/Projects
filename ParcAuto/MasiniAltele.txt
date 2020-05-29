@@ -1,0 +1,4 @@
+Toyota,Corola,rosu,6000,motorina,2014
+Mazda,model6,albastru,10000,benzina,2017
+Suzuki,Vitara,galben,5000,benzina,2012
+Tesla,modelS,negru,20000,electric,2017
