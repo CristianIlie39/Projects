@@ -1,0 +1,5 @@
+Vernescu;George;chirurgie;prezent
+Dogaru;Petrica;radiologie;prezent
+Marcu;Stefan;radiologie;prezent
+Petrescu;Emilia;chirurgie;prezent
+Dornescu;Marius;chirurgie;prezent

@@ -1,0 +1,9 @@
+Vernescu;George;chirurgie;prezent
+Dima;Violeta;ortopedie;absent
+Dogaru;Petrica;radiologie;prezent
+Costescu;Dorina;chirurgie;absent
+Popa;Constantin;radiologie;absent
+Marcu;Stefan;radiologie;prezent
+Minescu;Ioana;ortopedie;absent
+Petrescu;Emilia;chirurgie;prezent
+Dornescu;Marius;chirurgie;prezent

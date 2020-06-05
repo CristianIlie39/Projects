@@ -1,0 +1,4 @@
+Dima;Violeta;ortopedie;absent
+Costescu;Dorina;chirurgie;absent
+Popa;Constantin;radiologie;absent
+Minescu;Ioana;ortopedie;absent

@@ -1,0 +1,4 @@
+Marinescu;Alina;radiologie;29
+Dinu;Cornel;radiologie;75
+Velicu;Mioara;radiologie;26
+Lemnaru;Codrin;radiologie;78

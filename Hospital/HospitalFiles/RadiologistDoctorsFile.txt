@@ -1,0 +1,3 @@
+Dogaru;Petrica;radiologie;prezent
+Popa;Constantin;radiologie;absent
+Marcu;Stefan;radiologie;prezent

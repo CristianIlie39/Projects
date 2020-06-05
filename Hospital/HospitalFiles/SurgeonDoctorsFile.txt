@@ -1,0 +1,4 @@
+Vernescu;George;chirurgie;prezent
+Costescu;Dorina;chirurgie;absent
+Petrescu;Emilia;chirurgie;prezent
+Dornescu;Marius;chirurgie;prezent

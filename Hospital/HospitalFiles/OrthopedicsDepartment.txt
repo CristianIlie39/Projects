@@ -1,0 +1,5 @@
+Vasiliu;Carmen;ortopedie;70
+Rosu;Ion;ortopedie;74
+Costantinescu;Stefan;ortopedie;64
+Negulescu;Marian;ortopedie;39
+Preda;Adela;ortopedie;67

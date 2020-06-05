@@ -1,0 +1,15 @@
+Marinescu;Alina;29;radiologie
+Dinescu;Mioara;38;chirurgie
+Vasiliu;Carmen;70;ortopedie
+Codreanu;Viorel;25;chirurgie
+Dinu;Cornel;75;radiologie
+Rosu;Ion;74;ortopedie
+Badea;Mihai;31;chirurgie
+Costantinescu;Stefan;64;ortopedie
+Velicu;Mioara;26;radiologie
+Gheorghiu;Silvia;72;chirurgie
+Negulescu;Marian;39;ortopedie
+Lemnaru;Codrin;78;radiologie
+Maftei;Radu;62;chirurgie
+Preda;Adela;67;ortopedie
+Mateescu;Virgil;68;chirurgie
