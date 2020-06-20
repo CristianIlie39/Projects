@@ -1,0 +1,5 @@
+Radu;Aurelian;1990;true
+Marcu;Aurora;1989;true
+Toma;Marcel;1987;false
+Tudose;Cristian;1988;false
+Orban;Dumitru;1991;true

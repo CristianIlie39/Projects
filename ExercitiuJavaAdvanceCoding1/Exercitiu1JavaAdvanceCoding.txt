@@ -1,0 +1,13 @@
+Modelam Software Development Academy
+Reprezentam trainerul: nume, prenume, data nasterii, daca e autorizat sau nu (boolean)
+Reprezentam trainnee-ul: nume, prenume, data nasterii, daca mai are cunostinte de programare (boolean)
+Reprezentam grupa: nume, trainer, o colectie care sa tina trainee (fara duplicate - Set)
+Trainee o sa-i citim dintr-un fisier: nume;prenume;data nasterii;daca are cunostinte de programare - 15 studenti
+Vom avea mai multe grupe, fiecare grupa avand un trainer
+Grupele o sa le luam dintr-un fisier: nume;trainer
+O grupa poate sa aiba maxim 5 studenti; daca incercam sa adaugam al 6-lea, vom arunca exceptia MaximumNumberOfStudentsReached
+Afisam grupele care au numar maxim de studenti
+Afisam din toate grupele studentii care au pana in 25 de ani
+Afisam toti studentii care mai au cunostinte de programare
+Afisam grupa care are cei mai multi studenti care nu au cunostinte de programare
+
