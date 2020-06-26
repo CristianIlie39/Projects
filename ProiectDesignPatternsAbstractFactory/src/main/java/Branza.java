@@ -1,5 +1,5 @@
 public interface Branza {
 
-    void preparaBranza();
+    void preparaBranza ();
 
 }
