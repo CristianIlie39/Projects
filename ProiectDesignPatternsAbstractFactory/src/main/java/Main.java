@@ -4,7 +4,7 @@ public class Main {
 
         /* Abstract Factory - Design Pattern:
            - este un design pattern creational prin care se permite crearea de familii de obiecte fara
-             sa fie necesara specificarea exacta a claselor acestor obiecte
+             sa fie necesara specificarea exacta a claselor acestora
            - o fabrica abstracta este un obiect cu ajutorul caruia creem familii de obiecte
            - obiectele dintr-o familie sunt conexe sau dependende unele de altele -> sunt proiectate sa lucreze
              impreuna, iar familiile de obiecte create trebuie folosite impreuna
@@ -32,7 +32,7 @@ public class Main {
         //cream un obiect fabrica abstracta
         FabricaTopping fabricaTopping = new FabricaToppingMici();
 
-        /* in continuare cream obiectele conexe care fac parte din aceeasi familie, respectiv obiectul de tip BranzaCapra si obiectul
+        /* in continuare cream obiectele conexe care fac parte din aceeasi familie, respectiv ingredientele de tip BranzaCapra si
         de tip SosMustar; acestea formeaza o familie de obiecte deoarece toppingul pt mici nu poate exista fara unul
         dintre ele */
 
@@ -40,7 +40,8 @@ public class Main {
         /* cu ajutorul obiectului fabricaTopping am apelat metoda produceSos() din
         subclasa FabricaToppingMici, prin care am creat un obiect de tip SosMustar, obiect care are in constructor
         metoda preparaSos() din interfata Sos, metoda care a fost suprascrisa in clasa SosMustar care implementeaza
-        interfata Sos; la final, metoda preparaSos() afiseaza "Se prepara sosul cu mustar" */
+        interfata Sos; la final, metoda preparaSos() afiseaza "Se prepara sosul cu mustar"; de asemenea am creat
+        obiectul SosMustar fara sa fie nevoie sa specific exact in cod clasa SosMustar*/
 
         fabricaTopping.produceBranza();
 
