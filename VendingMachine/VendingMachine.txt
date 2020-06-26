@@ -1,0 +1,18 @@
+Modelam un automat de Vending Machine care o sa poata vinde:
+- bauturi (Cola, Fanta, apa) cu nume, pret si cantitate (despartite prin ";")
+- cafea - cu nume, pret si cantitate; putem vinde Cappucino, Americano, Espresso
+- snack-uri - cu nume, pret si cantitate: croassant, chips, chocolate bar
+Fiecare din aceste categorii vor fi citite din fisier (3 fisiere - bauturi, cafea, snack-uri)
+Vom implementa un meniu:
+- optiunea 1: Introduceti o suma de bani; utilizatorul va introduce un numar; trebuie sa ne asiguram ca numarul > 0, 
+daca nu se arunca o exceptie AmountNotAcceptedException
+- apoi se afiseaza optiunile de cumparare: tasta 1 - cola, tasta 2 - fanta, tasta 3 - apa, tasta 4 - Cappucino, 
+tasta 5 - Americano, tasta 6 - Espresso, tasta 7 - croassant, tasta 8 - chips, tasta 9 - chocolate bar
+Dupa ce user-ul selecteaza ce vrea, daca are destui bani ii vinde ce vrea, daca nu aruncam o exceptie NotEnoughMoneyException.
+Trebuie sa verificam daca exista cantitatea solicitata, daca nu se arunca exceptia NotEnoughQuantityException.
+
+
+
+
+
+
