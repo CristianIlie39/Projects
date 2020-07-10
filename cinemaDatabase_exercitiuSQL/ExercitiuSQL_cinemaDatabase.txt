@@ -1,0 +1,31 @@
+Sa se modeleze o baza de date cu filme cu urmatoarele tabele 
+ -Actori : nume,prenume,gen
+ -Filme : titlu, anul lansarii, durata , limba,tara lansarii,genul filmului,regia
+ -Gen de filme :nume, tip vizionare
+ -Regizor : nume si prenume 
+ -Reviwer : nume si prenume si varsta
+ -Rating : reviewer ul , filmul aferent, numarul de stele 
+ -Movie cast: Filmul si actorii (2),rol
+
+Exercitii:
+1.Sa se creeze baza de date si tabelele care sa modeleze ce am scris mai sus
+2.Sa se insereze in tabel date cel putin 10 randuri la fiecare tabel 
+3.Sa se afiseze toti actorii de gen masculin
+4.Sa se afiseze toti actorii de gen feminin
+5.Sa se afiseze filmele lansate inainte de 1990
+6.Sa se afiseze filmele drama si comedie 
+7.Sa se afiseze filmele care nu au fost lansate in Romania
+8.Sa se afiseze filmele care au fost regizate de Steven Spielberg (de un anumit regizor)
+9.Sa se afiseze filmele care dureaza mai mult de 2 ore 
+10.Sa se afiseze cate filme dureaza intre o ora si 2 ore 
+11.Sa se afiseze toti reviewerii mai mari de 18 ani
+12.Sa se afiseze cati revieweri sunt mai mici de 18 ani
+13.Sa se afiseze filmele care au mai mult de 3 stele 
+14.Sa se afiseze cate filme au mai putin de 3 stele 
+15.Sa se afiseze media de varsta a tuturor reviewerilor
+16.Sa se afiseze durata medie a tuturor filmelor 
+17.Sa se afiseze actorii dintr un anumit film (ex Lord of the Rings)
+18.Sa se afiseze filmele in care un anumit actor a avut rolul principal
+19.Sa se afiseze filmele de un anumit tip (ex actiune)
+20.Sa se afiseze filmele care nu sunt 3d
+21.Sa se afiseze filmele comedie 2d
