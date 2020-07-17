@@ -1,0 +1,19 @@
+Luam BD cu masini:
+- facem toate operatiile de CRUD
+- facem programul de la cap la coada
+- facem un meniu utilizatorului
+tasta 1 - inserare masina
+- introduceti marca masinii
+- introduceti modelul masinii
+- introduceti anul fabricatiei
+- introduceti culoarea
+- introduceti combustibilul
+tasta 2 - update masina
+- introduceti marca si modelul masinii pe care vreti sa-l updatati
+- introduceti noua culoare a masinii
+tasta 3 - sterge masina
+- introduceti marca, modelul si anul fabricatiei
+- stergem masina cu datele introduse mai sus
+tasta 4 - cautare masina
+- cautam dupa marca, model si anul fabricatiei
+
