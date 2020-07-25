@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- header-ul de mai sus il gasim pe net: hibernate configuration file example -->
+
+<hibernate-configuration>
+    <!-- <hibernate-configuration> este sectiunea in care scriem toate configurarile necesare framework-ului Hibernate
+    pentru a se conecta la baza de date si pentru a mapa obiectele din programul nostru Java la tabelele din baza de date -->
+    <!-- Hibernate se conecteaza la baza de date in cadrul unei sesiuni, care contine datele de configurare  -->
+    <session-factory>
+        <!-- dialectul de baza de date folosit: MySQL -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- driver-ul pentru baza de date: jdbc -->
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <!-- adresa bazei de date -->
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/itcompany?serverTimezone=UTC</property>
+        <!-- username pentru conectarea la baza dee date -->
+        <property name="hibernate.connection.username">root</property>
+        <!-- parola pentru conectarea la baza de date -->
+        <property name="hibernate.connection.password">123456789+</property>
+
+        <!-- proprietate care forteaza Hibernate sa afiseze query-urile rulate in baza de date -->
+        <property name="show_sql">true</property>
+        <!-- specificam care sunt clasele care trebuiesc mapate cu un tabel din baza de date -->
+        <mapping class="entities.Employee"/>
+        <mapping class="entities.Department"/>
+        <mapping class="entities.Product"/>
+    </session-factory>
+</hibernate-configuration>

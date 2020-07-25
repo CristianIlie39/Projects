@@ -1,0 +1,23 @@
+Sa se modeleze o companie IT.
+Vom avea:
+- angajati: cu nume, prenume, adresa, varsta, nume departament, functie
+- departamente: nume, etajul, nr de angajati, nume sef departament
+- produse: nume, versiunea, numar de clienti, pret
+1. Sa se modeleze baza de date
+2. Sa se scrie un proiect Java care foloseste Hibernate
+3. Sa se salveze cel putin 10 angajati, 5 departamente, 5 produse
+4. Sa se stearga angajatii cu varsta > 65 ani
+5. Sa se stearga departamentele care nu au nici un angajat
+6. Sa se stearga produsele care au mai putin de 10 clienti
+7. Sa se mareasca pretul tuturor produselor cu 20%
+8. Sa se modifice functia angajatilor cu varsta intre 35 si 40 ani
+9. Sa se afiseze angajatii dintr-un anumit departament
+10. Sa se afiseze produsele care au mai mult de 200 de clienti
+11. Sa se afiseze etajul unui anumit departament
+12. Sa se afiseze departamentul si functia unui anumit angajat
+13. Sa se afiseze versiunea unui anumit produs
+
+Sa se documenteze despre proprietatile unei tranzactii (care este acronimul care defineste o tranzactie)
+Sa se exemplifice acest acronim (sa se foloseasca un exemplu care nu este pe internet).
+
+Exercitiul il facem in Main.
