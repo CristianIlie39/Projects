@@ -1,0 +1,29 @@
+Relatiile pot fi de 3 feluri:
+  1. One to one -> unei intrari dintr-o tabela in baza de date ii corespunde o singura intrare dintr-o alta tabela din aceeasi baza de date.
+  2. One to many -> unei intrari dintr-o tabela din baza de date ii corespund mai multe intrari dintr-o alta tabela din aceeasi baza de date.
+  3. Many to many -> mai multe intrari dintr-o tabela din baza de date ii pot corespunde mai multe intrari dintr-o alta tabela din aceeasi baza de date
+
+Reprezentarea relatiilor:
+
+  1. One to one ->
+  a. Cum reprezentam relatia in baza de date
+    ->folosim foreign key pentru a relationa 2 tabele intre ele
+    ->reguli: pentru a ne asigura ca 2 tabele dintr-o baza de date se afla intr-o relatie ONE TO ONE ne folosim de urmatoarele:
+              - foreign key(coloana care referentiaza id-ul tabelei parinte)
+              - pentru a ne asigura ca relatia este ONE TO ONE, fortam ca, coloana care reprezinta foreign key sa fie si unica(Unique Constraint).
+
+Exercitiu: Sa se reprezinte aceeasi relatie dintre tabelele profesori si adresa.
+
+  b. Cum reprezentam relatia in Java/Hibernate
+    -> prin cascadare intelegem aplicarea unor/acelorasi operatii tuturor entitatilor dintr-o anumita relatie.
+    -> ne folosim de adnotari: One to one, 
+         ->Join Column pe entitatea copil(mapam coloana care are foreign key - se aplica pe entitatea copil)
+         ->One to one ->pe entitatea parinte (mapam atributul din entitatea copil)
+
+   2. One to many ->
+   a. Cum reprezentam relatia in baza de date
+     ->folosim foreign key
+     ->nu mai e nevoie sa folosim UNIQUE
+     exemplu: adaugam o tabela care tine clasele (12a)
+
+   b. Cum reprezentam relatia in Java/Hibernate
