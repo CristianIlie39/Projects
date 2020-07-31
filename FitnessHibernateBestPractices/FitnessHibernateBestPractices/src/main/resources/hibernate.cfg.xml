@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property> -> nu mai este necesar,
+        "Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'.
+        The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary." -->
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/fitness?serverTimezone=UTC</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">123456789+</property>
+
+        <property name="show_sql">true</property>
+
+        <mapping class="persistence.entities.Gym"/>
+        <mapping class="persistence.entities.Person"/>
+        <mapping class="persistence.entities.Subscription"/>
+        <mapping class="persistence.entities.Workout"/>
+    </session-factory>
+</hibernate-configuration>

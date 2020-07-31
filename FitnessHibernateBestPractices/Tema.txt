@@ -1,0 +1,54 @@
+Sa se modeleze o sala de fitness
+Avem urmatoarele entitati:
+- o persoana care are nume, prenume, anul nasterii
+- abonament: nume, pret, data de inceput, data de sfarsit
+- antrenament: nume, durata, daca e aerobic sau nu (boolean)
+- sala de antrenament: o singura sala tine un anumit antrenament
+
+1. Sa se modeleze BD cu relatiile aferente intre tabele
+2. Sa se modeleze entitatile cu relatiile aferente intre ele (evitam relatiile many to many)
+3. Sa se insereze 5 persoane, 3 abonamente si 10 antrenamente (din Java) 
+4. Se se respecte Hibernate best practices
+
+Folosim one to one si one to many
+
+
+Plan: - analizam toate relatiile/combinatiile dintre 2 entitati din cele 4 entitati date (in total 
+	sunt 6 perechi de relatii), dupa care eliminam relatiile many to many conform 
+	cerintei exercitiului;
+
+        	 *	    1
+1.	persoana <--------> abonament
+	------->	    <--------	---> implementam relatia in exercitiul nostru
+	ManyToOne	    OneToMany
+
+		  1	    1
+2.	antrenament <-----> sala	---> implementam relatia in exercitiul nostru
+	------->	    <--------
+	OneToOne	    OneToOne
+
+		 *	    *
+3.	persoana <--------> antrenament
+	------->	    <--------	---> evitam relatia in exercitiul nostru
+	ManyToMany	    ManyToMany
+
+		 *	    *
+4.	abonament <-------> antrenament
+	------->	    <--------	---> evitam relatia in exercitiul nostru
+	ManyToMany	    ManyToMany
+
+		 *	    *
+5.	persoana <--------> sala
+	------->	    <--------	---> evitam relatia in exercitiul nostru
+	ManyToMany	    ManyToMany
+
+		 *	    *
+6.	abonament <-------> sala
+	------->	    <--------	---> evitam relatia in exercitiul nostru
+	ManyToMany	    ManyToMany
+
+
+
+
+
+
