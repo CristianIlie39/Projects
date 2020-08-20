@@ -1,0 +1,26 @@
+Sa se creeze o pagina web care sa contina 2 formulare:
+1. formular pentru inregistrarea unei masini in stocul unui magazin cu urmatoarele campuri:
+	- marca
+	- model
+	- an fabricatie,
+	- an inmatriculare
+	- culoare
+	- combustibil
+	- numar km
+	- pret
+	- crashed
+2. formular pentru vanzarea unei masini:
+	- numele cumparatorului
+	- prenumele cumparatorului
+	- localitatea
+	- varsta
+	- pretul vanzarii
+	- daca a fost vanduta in rate sau nu
+	- e-mail cumparator
+	- data vanzarii
+
+Pe pagina web sa mai existe cate un paragraf/loc/camp pt fiecare formular care sa afiseze datele introduse dupa ce acestea au fost procesate (ca exercitiu)
+De avut grija care campuri sunt required sau nu.
+De avut grija la tipul de date introdus/formatul lor.
+De documentat daca pt fiecare tip de input exista unul specific in html (cum ar fi date).
+De aplicat un stil paginii a.i. sa arate prietenos/ex vreu sa vad formularele unul langa altul si nu unul sub altul

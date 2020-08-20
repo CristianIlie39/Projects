@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>Car Registration Form</title>
+        <style>
+            h1{text-align: center; color: rgb(131, 23, 23); text-decoration-line: underline;}
+            body{background-color: aliceblue;}
+            h2{text-align: center; color: rgb(112, 20, 20);}
+            .addStockSection{border: thick double #32a1ce; width: 48%; float: left;
+                background-color: #cccccc;
+                height: 18cm;}
+            .saleCarsection{border: thick double #32a1ce;width: 48%; float: right;
+                background-color: #cccccc;
+                height: 18cm;
+                }
+            legend{font-size: 0.5cm;}
+            label{font-size: 0.45cm;}
+        </style>
+    </head>
+    <body>
+        <h1><b>Car Registration Form</b></h2>
+            <div class="addStockSection">
+                <h2>Form for registering the car in the dealer's stock</h2>
+                <form name="stockEntryCarForm" onsubmit="processRegistrationCar(); return false" method="POST">
+                    <fieldset>
+                        <legend>Form for registering the car in the dealer's stock</legend>
+                        <label>Brand</label><br>
+                        <input type="text", required="true", name="brand"/><br>
+                        <label>Model</label><br>
+                        <input type="text", required="true", name="model"/><br>
+                        <label>Year of manufacture</label><br>
+                        <input type="number", required="true", name="yearOfManufacture"/><br>
+                        <label>Date of registration</label><br>
+                        <input type="date", name="dateOfRegistration"/><br>
+                        <label>Color</label><br>
+                        <input type="color", name="color"/><br><br>
+                        <label>Benzine</label>
+                        <input type="radio", name="benzine"/><br>
+                        <label>Diesel</label>
+                        <input type="radio", name="diesel"/><br>
+                        <label>Electric</label>
+                        <input type="radio", name="electric"/><br>
+                        <label>Hybrid</label>
+                        <input type="radio", name="hybrid"/><br><br>
+                        <label>Number of kilometers</label><br>
+                        <input type="number", name="kilometers"/><br>
+                        <label>Price (EUR)</label><br>
+                        <input type="number", required="true", name="price"/><br><br>
+                        <label>Crashed</label>
+                        <input type="checkbox"/><br><br>
+                        <input type="submit"/>
+                    </fieldset>
+                </form>
+                <p><b>We display below the entered data:</b></p>
+                <p id="processing_result1"></p>
+
+                <script>
+                    function processRegistrationCar() {
+                        var brandValue = document.forms["stockEntryCarForm"]["brand"].value;
+                        var modelValue = document.forms["stockEntryCarForm"]["model"].value;
+                        var yearOfManufactureValue = document.forms["stockEntryCarForm"]["yearOfManufacture"].value;
+                        var dateOfRegistrationValue = document.forms["stockEntryCarForm"]["dateOfRegistration"].value;
+                        var colorValue = document.forms["stockEntryCarForm"]["color"].value;
+                        var benzineValue = document.forms["stockEntryCarForm"]["benzine"].value;
+                        var dieselValue = document.forms["stockEntryCarForm"]["diesel"].value;
+                        var electricValue = document.forms["stockEntryCarForm"]["electric"].value;
+                        var hybridValue = document.forms["stockEntryCarForm"]["hybrid"].value;
+                        var kilometersValue = document.forms["stockEntryCarForm"]["kilometers"].value;
+                        var priceValue = document.forms["stockEntryCarForm"]["price"].value;
+                        document.getElementById("processing_result1").innerText = brandValue + " ; " + modelValue + " ; " + yearOfManufactureValue + " ; " + 
+                        dateOfRegistrationValue + " ; " + colorValue + " ; " + kilometersValue + " ; " + priceValue;
+                    }
+                </script>
+
+            </div>
+
+            <div class="saleCarSection">
+                <h2>Form for registering the sale of a car</h2>
+                <form name="saleCarForm" onsubmit="processSaleCar(); return false" method="POST">
+                    <fieldset>
+                        <legend>Form for registering the sale of a car</legend>
+                        <label>Buyer Surname</label><br>
+                        <input type="text", required="true", name="buyerSurname"/><br>
+                        <label>Buyer First Name</label><br>
+                        <input type="text", required="true", name="buyerFirstName"/><br>
+                        <label>City</label><br>
+                        <input type="text", required="true", name="city"/><br>
+                        <label>Age</label><br>
+                        <input type="number", name="age"/><br>
+                        <label>Sale Price</label><br>
+                        <input type="number", required="true", name="salePrice"/><br><br>
+                        <label>Installments</label>
+                        <input type="checkbox"/><br><br>
+                        <label>Buyer e-mail:</label><br>
+                        <input type="email", required="true", name="email"/><br>
+                        <label>Date of sale</label><br>
+                        <input type="date", name="dateOfSale"/><br><br>
+                        <input type="submit"/>
+                    </fieldset>
+                </form>
+                <p><b>We display below the entered data:</b></p>
+                <p id="processing_result2"></p>
+
+                <script>
+                    function processSaleCar() {
+                        var buyerSurnameValue = document.forms["saleCarForm"]["buyerSurname"].value;
+                        var buyerFirstNameValue = document.forms["saleCarForm"]["buyerFirstName"].value;
+                        var cityValue = document.forms["saleCarForm"]["city"].value;
+                        var ageValue = document.forms["saleCarForm"]["age"].value;
+                        var salePriceValue = document.forms["saleCarForm"]["salePrice"].value;
+                        var emailValue = document.forms["saleCarForm"]["email"].value;
+                        var dateOfSaleValue = document.forms["saleCarForm"]["dateOfSale"].value;
+                        document.getElementById("processing_result2").innerText = buyerSurnameValue + " ; " + buyerFirstNameValue + " ; " + cityValue + " ; "
+                        + ageValue + " ; " + salePriceValue + " ; " + emailValue + " ; " + dateOfSaleValue;
+                    }
+                </script>
+            </div>
+    </body>
+</html>
