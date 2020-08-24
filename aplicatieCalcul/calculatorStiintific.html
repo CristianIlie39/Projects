@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Calculator Stiintific</title>
+        <img src="resources/logoCalculatorStiintific.jpg">
+    </head>
+    <body>
+        <div>
+            <p>Va rog sa introduceti primul numar</p>
+            <input type="number" id="firstNumber">
+            <p>Va rog sa introduceti al doilea numar</p>
+            <input type="number" id="secondNumber"><br><br>
+
+            <button onclick="clickPutere()">Primul numar ridicat la puterea celui de-al doilea numar</button>
+            <p id="putere"></p>
+
+            <button onclick="clickRadical()">Radical din primul numar</button>
+            <p id="radicalFirstNumber"></p>
+
+            <button onclick="clickLogaritm()">Logaritm din al doilea numar</button>
+            <p id="logaritmSecondNumber"></p>
+        </div>
+    </body>
+    <script>
+        function clickPutere() {
+            var firstNumber = document.getElementById("firstNumber").value;
+            var secondNumber = document.getElementById("secondNumber").value;
+            var ridicareLaPutere = Math.pow(firstNumber, secondNumber);
+            document.getElementById("putere").innerText="Aici afisam rezultatul ridicarii primului numar la puterea celui de-al doilea: " + ridicareLaPutere;
+        }   
+
+        function clickRadical() {
+            var firstNumber = document.getElementById("firstNumber").value;
+            var radical = Math.sqrt(firstNumber);
+            document.getElementById("radicalFirstNumber").innerText="Aici afisam radical din primul numar: " + radical;
+        }
+
+        function clickLogaritm() {
+            var secondNumber = document.getElementById("secondNumber").value;
+            var logaritm = Math.log(secondNumber);
+            document.getElementById("logaritmSecondNumber").innerText="Aici afisam logaritm din al doilea numar: " + logaritm;
+        }
+    </script>
+</html>

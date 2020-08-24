@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Calculator Standard</title>
+        <img id="logoStandard" src="resources/logoCalculatorStandard.png">
+    </head>
+    <body>
+        <br>
+        <div>
+            <p>Va rog sa introduceti primul numar</p>
+            <input type="number", id="firstNumber">
+            <p>Va rog sa introduceti al doilea numar</p>
+            <input type="number", id="secondNumber"><br><br>
+
+            <button onclick="clickAdunare()">Adunare</button> 
+            <p id="adunarea"></p>
+
+            <button onclick="clickScadere()">Scadere</button>
+            <p id="scaderea"></p>
+
+            <button onclick="clickInmultire()">Inmultire</button>
+            <p id="inmultirea"></p>
+
+            <button onclick="clickImpartire()">Impartire</button>
+            <p id="impartirea"></p>
+        </div>
+
+        <script>
+            function clickAdunare() {
+                var firstNumber = document.getElementById("firstNumber").value;
+                var secondNumber = document.getElementById("secondNumber").value;
+                var adunare = parseInt(firstNumber) + parseInt(secondNumber);
+                document.getElementById("adunarea").innerText="Aici afisam rezultatul adunarii: " + adunare;
+            }
+
+            function clickScadere() {
+                var firstNumber = document.getElementById("firstNumber").value;
+                var secondNumber = document.getElementById("secondNumber").value;
+                var scadere = firstNumber - secondNumber;
+                document.getElementById("scaderea").innerText="Aici afisam rezultatul scaderii: " + scadere;
+            }
+
+            function clickInmultire() {
+                var firstNumber = document.getElementById("firstNumber").value;
+                var secondNumber = document.getElementById("secondNumber").value;
+                var inmultire = firstNumber * secondNumber;
+                document.getElementById("inmultirea").innerText="Aici afisam rezultatul inmultirii: " + inmultire;
+            }
+
+            function clickImpartire() {
+                var firstNumber = document.getElementById("firstNumber").value;
+                var secondNumber = document.getElementById("secondNumber").value;
+                var impartire = firstNumber / secondNumber;
+                document.getElementById("impartirea").innerText="Aici afisam rezultatul impartirii: " + impartire;
+            }
+        </script>
+    </body>
+</html>
