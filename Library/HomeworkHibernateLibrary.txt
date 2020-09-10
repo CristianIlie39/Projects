@@ -1,0 +1,42 @@
+Sa se modeleze o biblioteca
+Vom folosi urmatoarele entitati:
+- carte: titlu, nr de volume, autori, gen, imprumutata(boolean), daca e disponibila sau nu - free (boolean)
+- autor: nume, prenume
+- sectiune: nume
+- persoana: nume, prenume, adresa, varsta
+
+Stabilim noi relatiile intre entitati la alegere, creativ; la fel pt cerintele CRUD
+
+		*	    *	
+1.	carte    <--------> autor
+	------->	    <--------	
+	ManyToMany	    ManyToMany
+
+		*	    1
+2.	carte     <----->   sectiune	
+	------->	    <--------
+	ManyToOne	    OneToMany
+
+		 *	    *
+3.	carte    <--------> persoana
+	------->	    <--------	
+	ManyToMany	    ManyToMany
+
+		 *	    *
+4.	autor    <------->  sectiune
+	------->	    <--------	
+	ManyToMany	    ManyToMany
+
+		 *	    *
+5.	autor    <--------> persoana
+	------->	    <--------	
+	ManyToMany	    ManyToMany
+
+		 *	    *
+6.	sectiune  <-------> persoana
+	------->	    <--------	
+	ManyToMany	    ManyToMany
+
+
+
+
