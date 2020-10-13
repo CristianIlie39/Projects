@@ -1,4 +1,7 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.*;
 
 public class Main {
 
@@ -22,17 +25,21 @@ public class Main {
 
         MyFileReader myFileReader = MyFileReader.getInstance();
 
+        Solution solution = new Solution();
+
         try {
             String filePath = "D:\\cursuri Alex\\RECAPITULARE\\04.10.2020\\fisierDeCitit.txt";
             myFileReader.displayProducts(filePath);
-            myFileReader.storeProductsByType(filePath);
-            myFileReader.displayTshirtsListByDecreasingSize(filePath);
-            myFileReader.displayShirtsListByIncreasePrice(filePath);
-            myFileReader.displayJacketsByColors(filePath);
+            solution.storeProductsByType(filePath);
+            solution.displayTshirtsListByDecreasingSize(filePath);
+            solution.displayShirtsListByIncreasePrice(filePath);
+            solution.displayJacketsByColors(filePath);
         } catch (IOException e) {
             System.out.println("A aparut o exceptie " + e.getMessage());
         }
-
     }
+
+
+
 
 }
